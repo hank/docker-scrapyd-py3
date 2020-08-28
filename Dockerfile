@@ -37,7 +37,7 @@ RUN set -xe \
                           zlib1g \
                           zlib1g-dev \
     && curl -sSL https://bootstrap.pypa.io/get-pip.py | python3 \
-    && pip install logparser pymongo \
+    && pip install logparser pymongo matterhook \
     && pip install git+https://github.com/scrapy/scrapy.git@$SCRAPY_VERSION \
                    git+https://github.com/scrapy/scrapyd.git@$SCRAPYD_VERSION \
                    git+https://github.com/scrapy/scrapyd-client.git \
